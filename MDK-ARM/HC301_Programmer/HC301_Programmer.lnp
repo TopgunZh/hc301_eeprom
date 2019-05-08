@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"hc301_programmer\startup_stm32f103xb.o"
+"hc301_programmer\hc301_eeprom.o"
+"hc301_programmer\main.o"
+"hc301_programmer\gpio.o"
+"hc301_programmer\tim.o"
+"hc301_programmer\stm32f1xx_it.o"
+"hc301_programmer\stm32f1xx_hal_msp.o"
+"hc301_programmer\stm32f1xx_hal_gpio_ex.o"
+"hc301_programmer\stm32f1xx_hal_tim.o"
+"hc301_programmer\stm32f1xx_hal_tim_ex.o"
+"hc301_programmer\stm32f1xx_hal.o"
+"hc301_programmer\stm32f1xx_hal_rcc.o"
+"hc301_programmer\stm32f1xx_hal_rcc_ex.o"
+"hc301_programmer\stm32f1xx_hal_gpio.o"
+"hc301_programmer\stm32f1xx_hal_dma.o"
+"hc301_programmer\stm32f1xx_hal_cortex.o"
+"hc301_programmer\stm32f1xx_hal_pwr.o"
+"hc301_programmer\stm32f1xx_hal_flash.o"
+"hc301_programmer\stm32f1xx_hal_flash_ex.o"
+"hc301_programmer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HC301_Programmer\HC301_Programmer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HC301_Programmer.map" -o HC301_Programmer\HC301_Programmer.axf
